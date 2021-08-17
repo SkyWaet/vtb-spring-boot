@@ -5,8 +5,10 @@ import com.skywaet.vtbspringboot.products.Product;
 import com.skywaet.vtbspringboot.services.FinancialService;
 import com.skywaet.vtbspringboot.services.SalesService;
 import com.skywaet.vtbspringboot.services.Storage;
+import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
+@Service
 public class SalesServiceImpl implements SalesService {
     private final Storage storage;
     private final FinancialService financialService;

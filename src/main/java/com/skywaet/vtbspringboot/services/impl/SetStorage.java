@@ -4,29 +4,38 @@ import com.skywaet.vtbspringboot.config.Locales;
 import com.skywaet.vtbspringboot.events.BaseEvent;
 import com.skywaet.vtbspringboot.events.products.ProductAddedEvent;
 import com.skywaet.vtbspringboot.events.products.ProductLimitReachedEvent;
-import com.skywaet.vtbspringboot. events.products.ProductRemovedEvent;
+import com.skywaet.vtbspringboot.events.products.ProductRemovedEvent;
 import lombok.Setter;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import com.skywaet.vtbspringboot.products.Product;
 import com.skywaet.vtbspringboot.services.Storage;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+
+@Service
 @Setter
 public class SetStorage implements Storage, ApplicationEventPublisherAware, ApplicationContextAware {
 
     private final Set<Product> storage = new HashSet<>();
-    private int limit;
+    private int limit = 10;
     private ApplicationEventPublisher publisher;
     private ApplicationContext ctx;
     private Locales locale;
+
+    @Autowired
+    public void setLocale(Locales locale) {
+        this.locale = locale;
+    }
 
     @Override
     public List<Product> get() {

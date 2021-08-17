@@ -2,10 +2,13 @@ package com.skywaet.vtbspringboot.services.impl;
 
 import com.skywaet.vtbspringboot.config.Locales;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import com.skywaet.vtbspringboot.services.CustomerService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CustomerServiceImpl implements CustomerService, ApplicationContextAware {
     private ApplicationContext ctx;
     private Locales locales;
@@ -20,6 +23,7 @@ public class CustomerServiceImpl implements CustomerService, ApplicationContextA
         ctx = applicationContext;
     }
 
+    @Autowired
     public void setLocales(Locales locales) {
         this.locales = locales;
     }

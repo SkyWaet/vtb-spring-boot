@@ -1,5 +1,6 @@
 package com.skywaet.vtbspringboot;
 
+import com.skywaet.vtbspringboot.config.MessageConfig;
 import com.skywaet.vtbspringboot.employees.AbstractEmployee;
 import com.skywaet.vtbspringboot.products.Book;
 import com.skywaet.vtbspringboot.products.Product;
@@ -9,11 +10,13 @@ import com.skywaet.vtbspringboot.shop.Shop;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Import;
 
 import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @SpringBootApplication
+@Import(MessageConfig.class)
 public class VtbSpringBootApplication {
 
     public static void main(String[] args) {

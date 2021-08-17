@@ -7,16 +7,19 @@ import com.skywaet.vtbspringboot.services.CustomerService;
 import com.skywaet.vtbspringboot.services.HRService;
 import com.skywaet.vtbspringboot.services.SalesService;
 import com.skywaet.vtbspringboot.services.Storage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class Shop {
     private final Storage storage;
     private final CustomerService customerService;
     private final HRService hrService;
     private final SalesService salesService;
 
-
+    @Autowired
     public Shop(Storage storage, CustomerService customerService, HRService hrService, SalesService salesService) {
         this.storage = storage;
         this.customerService = customerService;

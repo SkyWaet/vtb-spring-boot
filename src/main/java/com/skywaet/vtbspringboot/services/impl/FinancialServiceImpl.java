@@ -5,12 +5,15 @@ import com.skywaet.vtbspringboot.events.BaseEvent;
 import com.skywaet.vtbspringboot.events.sales.TransactionApprovedEvent;
 import com.skywaet.vtbspringboot.events.sales.TransactionRejectedEvent;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import com.skywaet.vtbspringboot.services.FinancialService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class FinancialServiceImpl implements FinancialService, ApplicationEventPublisherAware, ApplicationContextAware {
     private ApplicationEventPublisher publisher;
     private ApplicationContext ctx;
@@ -40,6 +43,7 @@ public class FinancialServiceImpl implements FinancialService, ApplicationEventP
         ctx = applicationContext;
     }
 
+    @Autowired
     public void setLocale(Locales locale) {
         this.locale = locale;
     }

@@ -1,6 +1,6 @@
-package events.employees;
+package com.skywaet.vtbspringboot.events.employees;
 
-import events.BaseEvent;
+import com.skywaet.vtbspringboot.events.BaseEvent;
 
 public class EmployeeFiredEvent extends BaseEvent {
     public EmployeeFiredEvent(Object source, String msg) {

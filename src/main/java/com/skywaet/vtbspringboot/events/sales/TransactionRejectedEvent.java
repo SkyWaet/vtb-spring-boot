@@ -1,6 +1,6 @@
-package events.sales;
+package com.skywaet.vtbspringboot.events.sales;
 
-import events.BaseEvent;
+import com.skywaet.vtbspringboot.events.BaseEvent;
 import lombok.Getter;
 
 @Getter

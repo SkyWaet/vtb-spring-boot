@@ -1,6 +1,6 @@
-package employees.impl;
+package com.skywaet.vtbspringboot.employees.impl;
 
-import employees.AbstractEmployee;
+import com.skywaet.vtbspringboot.employees.AbstractEmployee;
 
 import lombok.ToString;
 

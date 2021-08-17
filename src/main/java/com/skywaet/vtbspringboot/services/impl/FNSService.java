@@ -1,6 +1,6 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
-import events.sales.TransactionApprovedEvent;
+import com.skywaet.vtbspringboot.events.sales.TransactionApprovedEvent;
 import org.springframework.context.ApplicationListener;
 
 import java.time.LocalDateTime;

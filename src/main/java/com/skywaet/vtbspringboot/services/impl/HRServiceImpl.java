@@ -1,18 +1,18 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
-import config.Locales;
-import employees.AbstractEmployee;
-import events.BaseEvent;
-import events.employees.EmployeeFiredEvent;
-import events.employees.EmployeeHiredEvent;
-import events.employees.EmployeeSalaryRaisedEvent;
+import com.skywaet.vtbspringboot.config.Locales;
+import com.skywaet.vtbspringboot.employees.AbstractEmployee;
+import com.skywaet.vtbspringboot.events.BaseEvent;
+import com.skywaet.vtbspringboot.events.employees.EmployeeFiredEvent;
+import com.skywaet.vtbspringboot.events.employees.EmployeeHiredEvent;
+import com.skywaet.vtbspringboot.events.employees.EmployeeSalaryRaisedEvent;
 import lombok.Getter;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
-import services.HRService;
+import com.skywaet.vtbspringboot.services.HRService;
 
 import java.util.ArrayList;
 import java.util.List;

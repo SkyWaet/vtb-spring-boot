@@ -1,4 +1,4 @@
-package employees;
+package com.skywaet.vtbspringboot.employees;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

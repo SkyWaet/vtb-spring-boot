@@ -1,18 +1,18 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
-import config.Locales;
-import events.BaseEvent;
-import events.products.ProductAddedEvent;
-import events.products.ProductLimitReachedEvent;
-import events.products.ProductRemovedEvent;
+import com.skywaet.vtbspringboot.config.Locales;
+import com.skywaet.vtbspringboot.events.BaseEvent;
+import com.skywaet.vtbspringboot.events.products.ProductAddedEvent;
+import com.skywaet.vtbspringboot.events.products.ProductLimitReachedEvent;
+import com.skywaet.vtbspringboot. events.products.ProductRemovedEvent;
 import lombok.Setter;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
-import products.Product;
-import services.Storage;
+import com.skywaet.vtbspringboot.products.Product;
+import com.skywaet.vtbspringboot.services.Storage;
 
 import java.util.ArrayList;
 import java.util.HashSet;

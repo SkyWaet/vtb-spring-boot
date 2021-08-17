@@ -1,7 +1,6 @@
-package events.employees;
+package com.skywaet.vtbspringboot.events.employees;
 
-import employees.AbstractEmployee;
-import events.BaseEvent;
+import com.skywaet.vtbspringboot.events.BaseEvent;
 
 public class EmployeeHiredEvent extends BaseEvent {
     public EmployeeHiredEvent(Object source, String msg) {

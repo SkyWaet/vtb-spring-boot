@@ -1,4 +1,4 @@
-package events;
+package com.skywaet.vtbspringboot.events;
 
 import lombok.Getter;
 import org.springframework.context.ApplicationEvent;

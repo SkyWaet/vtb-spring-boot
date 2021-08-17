@@ -1,6 +1,6 @@
-package events.products;
+package com.skywaet.vtbspringboot.events.products;
 
-import events.BaseEvent;
+import com.skywaet.vtbspringboot.events.BaseEvent;
 
 public class ProductAddedEvent extends BaseEvent {
 

@@ -1,10 +1,10 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
 import lombok.AllArgsConstructor;
-import products.Product;
-import services.FinancialService;
-import services.SalesService;
-import services.Storage;
+import com.skywaet.vtbspringboot.products.Product;
+import com.skywaet.vtbspringboot.services.FinancialService;
+import com.skywaet.vtbspringboot.services.SalesService;
+import com.skywaet.vtbspringboot.services.Storage;
 
 @AllArgsConstructor
 public class SalesServiceImpl implements SalesService {

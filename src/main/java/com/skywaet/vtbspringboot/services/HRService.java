@@ -1,6 +1,6 @@
-package services;
+package com.skywaet.vtbspringboot.services;
 
-import employees.AbstractEmployee;
+import com.skywaet.vtbspringboot.employees.AbstractEmployee;
 
 import java.util.List;
 

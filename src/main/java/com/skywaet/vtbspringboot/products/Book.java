@@ -1,10 +1,8 @@
-package products;
+package com.skywaet.vtbspringboot.products;
 
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-
 public class Book extends Product {
     public Book(String name, double price) {
         super(name, price);

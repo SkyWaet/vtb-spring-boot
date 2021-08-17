@@ -1,10 +1,10 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
-import config.Locales;
+import com.skywaet.vtbspringboot.config.Locales;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import services.CustomerService;
+import com.skywaet.vtbspringboot.services.CustomerService;
 
 public class CustomerServiceImpl implements CustomerService, ApplicationContextAware {
     private ApplicationContext ctx;

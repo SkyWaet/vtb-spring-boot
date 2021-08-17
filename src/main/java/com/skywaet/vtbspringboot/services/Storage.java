@@ -1,6 +1,6 @@
-package services;
+package com.skywaet.vtbspringboot.services;
 
-import products.Product;
+import com.skywaet.vtbspringboot.products.Product;
 
 import java.util.List;
 

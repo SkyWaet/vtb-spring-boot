@@ -1,12 +1,12 @@
-package shop;
+package com.skywaet.vtbspringboot.shop;
 
-import employees.AbstractEmployee;
-import employees.impl.RegularEmployee;
-import products.Product;
-import services.CustomerService;
-import services.HRService;
-import services.SalesService;
-import services.Storage;
+import com.skywaet.vtbspringboot.employees.AbstractEmployee;
+import com.skywaet.vtbspringboot.employees.impl.RegularEmployee;
+import com.skywaet.vtbspringboot.products.Product;
+import com.skywaet.vtbspringboot.services.CustomerService;
+import com.skywaet.vtbspringboot.services.HRService;
+import com.skywaet.vtbspringboot.services.SalesService;
+import com.skywaet.vtbspringboot.services.Storage;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package config;
+package com.skywaet.vtbspringboot.config;
 
 import lombok.Getter;
 

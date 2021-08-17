@@ -1,13 +1,13 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
-import config.Locales;
-import events.BaseEvent;
+import com.skywaet.vtbspringboot.config.Locales;
+import com.skywaet.vtbspringboot.events.BaseEvent;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationListener;
-import services.Logger;
+import com.skywaet.vtbspringboot.services.Logger;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

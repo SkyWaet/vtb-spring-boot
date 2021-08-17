@@ -1,15 +1,15 @@
-package services.impl;
+package com.skywaet.vtbspringboot.services.impl;
 
-import config.Locales;
-import events.BaseEvent;
-import events.sales.TransactionApprovedEvent;
-import events.sales.TransactionRejectedEvent;
+import com.skywaet.vtbspringboot.config.Locales;
+import com.skywaet.vtbspringboot.events.BaseEvent;
+import com.skywaet.vtbspringboot.events.sales.TransactionApprovedEvent;
+import com.skywaet.vtbspringboot.events.sales.TransactionRejectedEvent;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
-import services.FinancialService;
+import com.skywaet.vtbspringboot.services.FinancialService;
 
 public class FinancialServiceImpl implements FinancialService, ApplicationEventPublisherAware, ApplicationContextAware {
     private ApplicationEventPublisher publisher;

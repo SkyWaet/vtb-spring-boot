@@ -1,4 +1,4 @@
-package products;
+package com.skywaet.vtbspringboot.products;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

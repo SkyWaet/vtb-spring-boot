@@ -31,7 +31,7 @@ public class ConsoleLogger implements Logger, ApplicationListener<BaseEvent>, Ap
 
     @Override
     public void log(Object o) {
-        System.out.println("" + LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS).format(DateTimeFormatter.ofPattern("yyyy-mm-dd hh:MM:ss")) + " " + ctx.getMessage("log", new Object[0], locales.getLocale()) + ": " + o);
+        System.out.println("" + LocalDateTime.now().truncatedTo(ChronoUnit.SECONDS).format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss")) + " " + ctx.getMessage("log", new Object[0], locales.getLocale()) + ": " + o);
     }
 
     @Override
